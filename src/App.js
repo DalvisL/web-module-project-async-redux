@@ -27,6 +27,9 @@ const AppWrapper = styled.div`
   ol {
     font-size: 1.2rem;
   }
+  .wrapper {
+    margin-left: 20px;
+  }
 `;
 
 function App(props) {
