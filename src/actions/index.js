@@ -19,7 +19,6 @@ export const fetchName = (name) => dispatch => {
     dispatch({ type: FETCH_NAME });
     axios.get(url)
         .then(res => {
-            console.log(res.data);
             dispatch({ type: FETCH_NAME_SUCCESS, payload: res.data.country });
         })
         .catch(err => {
